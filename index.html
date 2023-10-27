@@ -11,17 +11,28 @@
 
 </head>
 
-<body class="text-lg font-normal max-w-full min-h-screen">
+<body class="flex flex-col text-lg font-normal max-w-full min-h-screen">
 
-  <header>
-    Home
-    About
-    Contact
-    Blog
-    Careers
+  <header class="flex justify-between pt-6 pb-6 pl-6 pr-2">
+    <img src="./images/logo.svg" alt="easybank-logo">
+
+    <div class="tham tham-e-squeeze tham-w-6">
+      <div class="tham-box">
+        <div class="tham-inner" />
+      </div>
+    </div>
   </header>
 
-  Request Invite
+  <nav class="tham-active">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Blog</li>
+      <li>Careers</li>
+    </ul>
+  </nav>
+
 
 
   <!-- 
@@ -92,7 +103,7 @@
 
   © Easybank. All Rights Reserved
    -->
-
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
