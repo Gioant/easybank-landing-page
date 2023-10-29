@@ -5,21 +5,32 @@ module.exports = {
     "./src/js/*.js"
   ],
   theme: {
-    extend: {
-      fontfamily: {
-        'public-sans': ["'Public Sans'", 'sans-serif'],
-      },
+    fontFamily: {
+      sans: ['Public Sans'],
+      serif: ['sans-serif']
+    },
+    colors: {
+      //Primary
+      'SpaceCadet': 'hsl(233, 26%, 24%)',
+      'LimeGreen': 'hsl(136, 65%, 51%)',
+      'Cyan': 'hsl(192, 70%, 51%)',
+      //Neutral
+      'CoolGray': 'hsl(233, 8%, 62%)',
+      'FlashWhite': 'hsl(220, 16%, 96%)',
+      'SeaSalt': 'hsl(0, 0%, 98%)',
+      'White': 'hsl(0, 0%, 100%)',
+    },
 
-      colors: {
-        //Primary
-        'Space-Cadet': '#2d314d',
-        'Lime-Green': '#31d35c',
-        'Aero': '#2bb7da',
-        //Neutral
-        'Cool-Gray': '##9698A6',
-        'Flash-White': '##f3f4f6',
-        'SeaSalt': '#fafafa',
-        'White': '#ffffff',
+    extend: {
+      backgroundImage: {
+        'heroImg': "url('../../images/bg-intro-desktop.svg')",
+        'heroImg-Mobile': "url('../../images/bg-intro-mobile.svg')",
+        'imgMockups': "url('../../images/image-mockups.png')",
+        // //Article images
+        // 'imgCurrency': "url('../../images/image-currency.jpg')",
+        // 'imgResto': "url('../../images/image-restaurant.jpg')",
+        // 'imgPlane': "url('../../images/image-plane.jpg')",
+        // 'imgConfetti': "url('../../images/image-confetti.jpg')",
       },
 
     },
