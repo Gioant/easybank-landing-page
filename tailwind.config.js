@@ -25,7 +25,6 @@ module.exports = {
       backgroundImage: {
         'heroImg': "url('../../images/bg-intro-desktop.svg')",
         'heroImg-Mobile': "url('../../images/bg-intro-mobile.svg')",
-        'imgMockups': "url('../../images/image-mockups.png')",
         // //Article images
         // 'imgCurrency': "url('../../images/image-currency.jpg')",
         // 'imgResto': "url('../../images/image-restaurant.jpg')",
