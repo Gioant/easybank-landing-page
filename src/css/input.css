@@ -5,8 +5,55 @@
 
 
 @layer base {
-    h1,h2 {
+
+    h1,
+    h2,
+    h3,
+    h4 {
         @apply text-SpaceCadet;
     }
-}
 
+    h3 {
+        @apply text-xl;
+    }
+
+    h4 {
+        @apply font-light text-base leading-5;
+    }
+
+    p {
+        @apply text-sm text-CoolGray;
+    }
+
+    #feature>div>img {
+        @apply mx-auto;
+    }
+
+    #feature>div:not(:first-child) {
+        @apply flex flex-col gap-6;
+    }
+
+    #feature>div:not(:first-child)>p {
+        @apply leading-6;
+    }
+
+    small {
+        @apply text-[0.625rem] text-CoolGray;
+    }
+
+    #article-sect>div {
+        @apply bg-White flex flex-col;
+    }
+
+    #article-sect>div>img {
+        @apply rounded-t-lg w-full max-h-[12.5rem] object-cover;
+    }
+
+    #article-sect>div>div {
+        @apply flex flex-col gap-1 px-6 pt-4 pb-8 rounded-b-lg;
+    }
+
+    #article-sect>div>div>p {
+        @apply text-[0.8rem];
+    }
+}
