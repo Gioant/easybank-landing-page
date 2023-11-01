@@ -42,7 +42,7 @@
     }
 
     #article-sect>div {
-        @apply bg-White flex flex-col;
+        @apply bg-White flex flex-col rounded-b-lg;
     }
 
     #article-sect>div>img {
@@ -50,7 +50,7 @@
     }
 
     #article-sect>div>div {
-        @apply flex flex-col gap-1 px-6 pt-4 pb-8 rounded-b-lg;
+        @apply flex flex-col gap-1 px-6 pt-4 pb-8;
     }
 
     #article-sect>div>div>p {
