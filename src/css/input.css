@@ -6,6 +6,10 @@
 
 @layer base {
 
+    .blur {
+        backdrop-filter: blur(8px) brightness(0.6);
+    }
+
     h1,
     h2,
     h3,
