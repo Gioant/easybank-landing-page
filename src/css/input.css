@@ -18,7 +18,7 @@
     }
 
     h4 {
-        @apply font-light text-base leading-5;
+        @apply font-light text-base leading-5 w-[95%];
     }
 
     p {
@@ -38,7 +38,7 @@
     }
 
     #feature>div:not(:first-child) {
-        @apply flex flex-col gap-6;
+        @apply flex flex-col gap-6 w-[91%] mx-auto;
     }
 
     #feature>div:not(:first-child)>p {
