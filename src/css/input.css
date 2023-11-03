@@ -10,6 +10,10 @@
         backdrop-filter: blur(8px) brightness(0.6);
     }
 
+    .translate {
+        transform: translate(-50%, 5%);
+    }
+
     h1,
     h2,
     h3,
@@ -22,19 +26,24 @@
     }
 
     h4 {
-        @apply font-light text-base leading-5 w-[95%];
+        @apply font-light text-base leading-5 w-[95%] md:text-lg;
     }
 
     p {
-        @apply text-sm text-CoolGray;
+        @apply text-sm text-CoolGray md:text-lg;
     }
 
     ul {
         @apply flex flex-col justify-center items-center;
     }
 
+    #modal>ul {
+        @apply md:justify-evenly;
+    }
+
+
     button {
-        @apply text-xs bg-gradient-to-r from-LimeGreen to-Cyan px-6 py-3 rounded-full text-White cursor-pointer;
+        @apply text-xs bg-gradient-to-r from-LimeGreen to-Cyan px-6 py-3 rounded-full text-White cursor-pointer md:text-lg;
     }
 
     #feature>div>img {
@@ -46,11 +55,11 @@
     }
 
     #feature>div:not(:first-child)>p {
-        @apply leading-6;
+        @apply leading-6 md:leading-8;
     }
 
     small {
-        @apply text-[0.625rem] text-CoolGray;
+        @apply text-[0.625rem] text-CoolGray md:text-xs;
     }
 
     #article-sect>div {
@@ -58,7 +67,7 @@
     }
 
     #article-sect>div>img {
-        @apply rounded-t-lg w-full max-h-[12.5rem] object-cover;
+        @apply rounded-t-lg w-full max-h-[12.5rem] object-cover md:max-h-[26rem];
     }
 
     #article-sect>div>div {
@@ -66,6 +75,6 @@
     }
 
     #article-sect>div>div>p {
-        @apply text-[0.8rem];
+        @apply text-[0.8rem] md:text-base;
     }
 }
