@@ -22,7 +22,7 @@
     }
 
     h3 {
-        @apply text-xl;
+        @apply text-xl xl:text-2xl;
     }
 
     h4 {
@@ -43,38 +43,34 @@
 
 
     button {
-        @apply text-xs bg-gradient-to-r from-LimeGreen to-Cyan px-6 py-3 rounded-full text-White cursor-pointer md:text-lg;
+        @apply text-xs bg-gradient-to-r from-LimeGreen to-Cyan px-6 py-3 rounded-full text-White cursor-pointer md:text-base xl:text-lg;
     }
 
-    #feature>div>img {
-        @apply mx-auto;
+    #feat-container>div {
+        @apply flex flex-col gap-6 w-[91%] mx-auto xl:items-start;
     }
 
-    #feature>div:not(:first-child) {
-        @apply flex flex-col gap-6 w-[91%] mx-auto;
-    }
-
-    #feature>div:not(:first-child)>p {
-        @apply leading-6 md:leading-8;
+    #feat-container>div>p {
+        @apply leading-6 md:leading-8 xl:text-base xl:w-[87.20%];
     }
 
     small {
         @apply text-[0.625rem] text-CoolGray md:text-xs;
     }
 
-    #article-sect>div {
-        @apply bg-White flex flex-col rounded-b-lg;
+    #article-sect>section>div {
+        @apply bg-White rounded-lg;
     }
 
-    #article-sect>div>img {
-        @apply rounded-t-lg w-full max-h-[12.5rem] object-cover md:max-h-[26rem];
+    #article-sect>section img {
+        @apply rounded-t-lg w-full max-h-[12.5rem] object-cover md:max-h-[26rem] xl:h-72 xl:object-fill;
     }
 
-    #article-sect>div>div {
-        @apply flex flex-col gap-1 px-6 pt-4 pb-8;
+    #article-sect>section>div>div {
+        @apply flex flex-col gap-4 px-6 pt-4 pb-8 xl:p-9;
     }
 
-    #article-sect>div>div>p {
+    #article-sect>section>div>div>p {
         @apply text-[0.8rem] md:text-base;
     }
 }
