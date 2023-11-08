@@ -31,7 +31,6 @@ module.exports = {
         // 'imgPlane': "url('../../images/image-plane.jpg')",
         // 'imgConfetti': "url('../../images/image-confetti.jpg')",
       },
-
     },
   },
   plugins: [require('tailwind-hamburgers')],
