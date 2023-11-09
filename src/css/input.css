@@ -47,11 +47,11 @@
     }
 
     #feat-container>div {
-        @apply flex flex-col gap-6 w-[91%] mx-auto xl:items-start;
+        @apply flex flex-col gap-6 w-[91%] mx-auto xl:items-start xl:w-full;
     }
 
     #feat-container>div>p {
-        @apply leading-6 md:leading-8 xl:text-base xl:w-[87.20%];
+        @apply leading-6 md:leading-8 xl:text-base xl:w-[265px];
     }
 
     small {
@@ -59,7 +59,7 @@
     }
 
     #article-sect>section>div {
-        @apply bg-White rounded-lg;
+        @apply bg-White rounded-lg xl:min-w-[320px];
     }
 
     #article-sect>section img {
