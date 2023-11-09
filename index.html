@@ -17,7 +17,7 @@
 <body class="flex flex-col text-lg font-normal max-w-full min-h-screen font-sans bg-SeaSalt">
 
   <!-- HEADER SECTION  -->
-  <header class="bg-White flex justify-between pt-6 pb-5 px-6 sticky z-[1] top-0 md:py-8 md:pr-8 xl:px-[16rem] xl:relative">
+  <header class="bg-White flex justify-between pt-6 pb-5 px-6 sticky z-[1] top-0 md:py-8 md:pr-8 xl:px-[8rem] 2xl:px-[16rem] xl:relative">
 
     <div class="hidden xl:flex xl:items-center xl:min-w-[150px]">
       <img class="xl:h-1/2" src="./images/logo.svg" alt="easybank-logo">
@@ -53,7 +53,8 @@
 
 
     <!-- HERO SECTION   -->
-    <section class="pb-16 xl:flex xl:flex-row-reverse xl:items-center xl:py-[12rem] xl:pl-[16rem] xl:gap-8 xl:bg-heroImg xl:bg-no-repeat xl:bg-auto xl:bg-[65rem_77%]">
+    <section
+      class="pb-16 xl:flex xl:flex-row-reverse xl:items-center xl:py-[12rem] xl:px-[8rem] 2xl:pl-[16rem] xl:gap-8 xl:bg-heroImg xl:bg-no-repeat xl:bg-auto xl:bg-[65rem_77%]">
 
       <div class="relative w-full xl:block">
         <img class="w-[inherit] xl:hidden" src="./images/bg-intro-mobile.svg" alt="hero-img" />
@@ -63,7 +64,8 @@
 
       <div class="flex flex-col text-center gap-4 w-[85%] xl:mx-auto xl:w-1/2 xl:text-left xl:gap-8">
         <h1 class="font-light text-4xl xl:text-6xl xl:min-w-[450px]">Next generation digital banking</h1>
-        <p class="leading-6 mx-auto md:leading-8 xl:min-w-[460px] xl:max-w-[460px] xl:mx-0">Take your financial life online. Your Easybank account will be a one-stop-shop for spending,
+        <p class="leading-6 mx-auto md:leading-8 xl:min-w-[460px] xl:max-w-[460px] xl:mx-0">Take your financial life online. Your Easybank account will be a one-stop-shop for
+          spending,
           saving, budgeting,
           investing, and much more.</p>
         <button class="mt-3 px-8 mx-auto xl:mx-0 xl:self-start">Request Invite</button>
@@ -72,14 +74,14 @@
 
     <!-- FEATURES SECTION   -->
     <section id="feature"
-      class="bg-FlashWhite flex flex-col items-center justify-center text-center px-4 py-16 gap-8 xl:text-left xl:items-start xl:px-16 2xl:px-[16rem] xl:gap-20">
+      class="bg-FlashWhite flex flex-col items-center justify-center text-center px-4 py-16 gap-8 xl:text-left xl:items-start xl:px-[8rem] xl:gap-20 2xl:px-[16rem]">
       <div>
         <h2 class="text-[2rem] leading-10 font-light xl:text-4xl">Why choose Easybank?</h2>
         <p class="mt-4 leading-6 md:leading-8 md:w-[90%] md:mx-auto xl:w-[70%] xl:mx-0">We leverage Open Banking to turn your bank account into your financial hub. Control
           your finances like never before.</p>
       </div>
 
-      <section id="feat-container" class="xl:flex xl:flex-row xl:gap-8">
+      <section id="feat-container" class="xl:flex xl:w-full xl:justify-between xl:gap-6 2xl:gap-8">
         <div class="mt-4 xl:mt-0">
           <img src="./images/icon-online.svg" alt="icon-online">
           <h3>Online Banking</h3>
@@ -114,7 +116,7 @@
     </section>
 
     <!-- ARTICLE SECTION -->
-    <section id="article-sect" class="bg-SeaSalt flex flex-col justify-center items-center w-[90%] mx-auto gap-8 py-24 md:gap-16 xl:w-full xl:mx-0 xl:px-[16rem] ">
+    <!-- <section id="article-sect" class="bg-SeaSalt flex flex-col justify-center items-center w-[90%] mx-auto gap-8 py-24 md:gap-16 xl:w-full xl:mx-0 xl:px-[16rem] ">
       <h2 class="text-[2rem]">Latest Articles</h2>
 
       <section class="xl:flex xl:flex-row xl:gap-8 2xl:gap-16">
@@ -159,11 +161,11 @@
         </div>
 
       </section>
-    </section>
+    </section> -->
 
     <!-- FOOTER SECTION -->
     <footer class="bg-SpaceCadet">
-      <section class="flex flex-col items-center justify-center gap-8 py-8 xl:flex-row xl:justify-between xl:px-[16rem] xl:py-24">
+      <section class="flex flex-col items-center justify-center py-8 xl:gap-3 xl:flex-row xl:justify-between xl:py-24 xl:px-[8rem] 2xl:gap-8 2xl:px-[16rem]">
 
         <div class="flex flex-col xl:gap-16">
           <div>
@@ -195,7 +197,7 @@
           </div>
         </div>
 
-        <nav class="xl:grid xl:grid-cols-2 xl:gap-x-24 xl:ml-40 xl:mr-[30rem]">
+        <nav class="xl:grid xl:grid-cols-2 xl:min-w-[330px] xl:gap-x-8 2xl:gap-x-16 2xl:ml-32 2xl:mr-[20rem]">
           <ul class="text-SeaSalt opacity-80 text-[0.8rem] md:text-base w-1/2 xl:w-full xl:grid xl:place-content-start">
             <li class="md:p-2">About Us</li>
             <li class="md:p-2">Contact</li>
@@ -209,8 +211,8 @@
           </ul>
         </nav>
 
-        <div class="flex flex-col justify-center items-center gap-8 xl:items-start">
-          <button class="md:px-8 xl:self-end">Request Invite</button>
+        <div class="flex flex-col justify-center items-center gap-8 xl:items-start xl:min-w-[275px]">
+          <button class="md:px-8  xl:self-end">Request Invite</button>
 
           <p class="opacity-80">© Easybank. All Rights Reserved</p>
         </div>
