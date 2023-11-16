@@ -73,4 +73,8 @@
     #article-cards>div>div>p {
         @apply text-[0.8rem] md:text-base xl:text-[0.86rem] 2xl:text-base;
     }
+
+    footer nav>ul>li {
+        @apply py-1 xl:py-0
+    }
 }
