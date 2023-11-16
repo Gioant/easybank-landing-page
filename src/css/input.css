@@ -59,7 +59,7 @@
     }
 
     #article-cards>div {
-        @apply bg-White rounded-lg;
+        @apply bg-White rounded-lg xl:min-w-[275px];
     }
 
     #article-cards img {
