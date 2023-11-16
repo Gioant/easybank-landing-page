@@ -17,7 +17,7 @@
 <body class="flex flex-col text-lg font-normal max-w-full min-h-screen font-sans bg-SeaSalt">
 
   <!-- HEADER SECTION  -->
-  <header class="bg-White flex justify-between pt-6 pb-5 px-6 sticky z-[1] top-0 md:py-8 md:pr-8 xl:px-[8rem] 2xl:px-[14rem] xl:relative">
+  <header class="bg-White flex justify-between pt-6 pb-5 px-6 sticky z-50 top-0 md:py-8 md:pr-8 xl:px-[8rem] xl:z-0 2xl:px-[14rem] xl:relative">
 
     <div class="hidden xl:flex xl:items-center xl:min-w-[150px]">
       <img class="xl:h-[40%]" src="./images/logo.svg" alt="easybank-logo">
@@ -50,11 +50,17 @@
   </header>
 
   <main class="relative overflow-hidden">
-    <img class="absolute xl:top-[-7rem] xl:right-[-7.5rem] xl:z-50 xl:w-[50%] 2xl:top-[0rem] 2xl:right-[6rem] 2xl:w-[40%]" src="./images/image-mockups.png" alt="test">
+    <img class="hidden xl:block xl:absolute xl:top-[-7rem] xl:right-[-7.5rem] xl:z-50 xl:w-[50%] 2xl:top-[0rem] 2xl:right-[6rem] 2xl:w-[40%]" src="./images/image-mockups.png"
+      alt="phone-mockups">
 
     <!-- HERO SECTION   -->
     <section class="pb-16 relative xl:flex xl:flex-row xl:gap-8 xl:items-center xl:py-[10rem] xl:px-[8rem] xl:overflow-hidden 2xl:pl-[16rem] 2xl:py-[16rem]">
-      <div class="flex flex-col text-center gap-4 w-[85%] xl:text-left xl:gap-8 xl:min-w-[450px] xl:max-w-[28rem]">
+
+      <div class="block bg-heroImg-Mobile bg-no-repeat bg-auto xl:hidden">
+        <img class="relative z-[10] translate-y-[-29%]" src="./images/image-mockups.png" alt="test">
+      </div>
+      
+      <div class="flex flex-col text-center gap-4 w-[85%] mx-auto xl:mx-0 xl:text-left xl:gap-8 xl:min-w-[450px] xl:max-w-[28rem]">
         <h1 class="font-light text-4xl xl:text-6xl">Next generation digital banking</h1>
         <p class="leading-6 mx-auto md:leading-8 xl:mx-0">Take your financial life online. Your Easybank account will be a one-stop-shop for
           spending,
@@ -63,22 +69,24 @@
         <button class="mt-3 px-8 mx-auto xl:mx-0 xl:self-start">Request Invite</button>
       </div>
 
-      <img class="xl:absolute xl:translate-x-[40%] xl:top-[-40%] 2xl:translate-x-[58%] 2xl:top-[-23%] 2xl:scale-125" src="./images/bg-intro-desktop.svg" alt="">
+      <img class="hidden xl:block xl:absolute xl:translate-x-[40%] xl:top-[-40%] 2xl:translate-x-[58%] 2xl:top-[-23%] 2xl:scale-125" src="./images/bg-intro-desktop.svg"
+        alt="hero-bg">
+
 
     </section>
 
 
     <!-- FEATURES SECTION   -->
     <section id="feature"
-      class="bg-FlashWhite flex flex-col items-center justify-center text-center px-4 py-16 gap-8 xl:text-left xl:items-start xl:px-[8rem] xl:gap-20 2xl:px-[16rem]">
+      class="bg-FlashWhite flex flex-col items-center justify-center text-center px-4 py-16 gap-4 xl:text-left xl:items-start xl:px-[8rem] xl:gap-20 2xl:px-[16rem]">
       <div>
         <h2 class="text-[2rem] leading-10 font-light xl:text-4xl">Why choose Easybank?</h2>
         <p class="mt-4 leading-6 md:leading-8 md:w-[90%] md:mx-auto xl:w-[70%] xl:mx-0">We leverage Open Banking to turn your bank account into your financial hub. Control
           your finances like never before.</p>
       </div>
 
-      <section id="feat-container" class="xl:flex xl:w-full xl:justify-between xl:gap-6 2xl:gap-8">
-        <div class="mt-4 xl:mt-0">
+      <section id="feat-container" class="xl:flex xl:w-full xl:justify-between xl:gap-6 2xl:gap-16">
+        <div class="xl:mt-0">
           <img src="./images/icon-online.svg" alt="icon-online">
           <h3>Online Banking</h3>
           <p>Our modern web and mobile applications allow you to keep track of your finances
