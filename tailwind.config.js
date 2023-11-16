@@ -21,17 +21,6 @@ module.exports = {
       'White': 'hsl(0, 0%, 100%)',
     },
 
-    extend: {
-      backgroundImage: {
-        'heroImg': "url('../../images/bg-intro-desktop.svg')",
-        'heroImg-Mobile': "url('../../images/bg-intro-mobile.svg')",
-        // //Article images
-        // 'imgCurrency': "url('../../images/image-currency.jpg')",
-        // 'imgResto': "url('../../images/image-restaurant.jpg')",
-        // 'imgPlane': "url('../../images/image-plane.jpg')",
-        // 'imgConfetti': "url('../../images/image-confetti.jpg')",
-      },
-    },
   },
   plugins: [require('tailwind-hamburgers')],
 }
